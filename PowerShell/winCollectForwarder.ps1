@@ -47,8 +47,8 @@ function Edit-WinCollect {
     catch {
         Write-Output $_.Exception.Message 
         Write-Output "Oh noes"
-		Pause
-		exit 5
+	    Pause
+	    exit 5
         #Write-Output $_.FullyQualifiedErrorID.Split(',')[0]
     }
 
