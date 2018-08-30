@@ -33,4 +33,4 @@ $fileInput = Select-String -Path $filePath -Pattern '"url": "(http.*)"'
 
 $fileInput | ForEach-Object -Process {
     $_.Matches.Groups[1].Value
-} | Sort-Object -Unique | Out-File -FilePath ./ouputHAR.csv
+} | Sort-Object -Unique | Out-File -FilePath ./outputHAR.csv
