@@ -1,6 +1,6 @@
 <#
     .SYNOPSIS
-    Decodes Proofpoint URLs and grabs domain and path. 
+    Decodes Proofpoint URLs and returns domain and path. 
 
     .DESCRIPTION
     Decodes v1 and v2 versions of Proofpoint URLs. The results are outputted to console.
@@ -15,7 +15,7 @@
     System.String to host.
 
     .EXAMPLE
-    C:\PS> proofpoint_decode.ps1
+    C:\PS> Get-ProofpointURL.ps1
 
     ================ Proofpoint Parser ================
     1: Read URL(s) from clipboard.
@@ -25,7 +25,7 @@
     Please make a selection:
 
     .EXAMPLE
-    C:\PS> proofpoint_decode.ps1 -Path <filePath>
+    C:\PS> Get-ProofpointURL.ps1 -Path <filePath>
 
     ================ Proofpoint Parser ================
     1: Read URL(s) from clipboard.
@@ -35,7 +35,7 @@
     Please make a selection:
 
     .EXAMPLE
-    C:\PS> proofpoint_decode.ps1 <filePath>
+    C:\PS> Get-ProofpointURL.ps1 <filePath>
 
     ================ Proofpoint Parser ================
     1: Read URL(s) from clipboard.
